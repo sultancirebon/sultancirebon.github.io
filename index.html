@@ -10,7 +10,9 @@
   <meta name="description" content="SultanLulu adalah platform game online yang menghadirkan beragam permainan, informasi terbaru, panduan fitur, dan pengalaman akses yang praktis bagi pengguna.">
 
   <meta name="author" content="SULTANLULU">
+
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
   <meta name="google-site-verification" content="TaozWG2ENnBgpW5XyJbcknDyWdN5_t5e0T0zmX1O7nk" />
 
   <!-- Canonical -->
@@ -21,16 +23,24 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
+
   <meta property="og:title" content="SultanLulu Platform Game Online dengan Informasi Terbaru">
+
   <meta property="og:description" content="SultanLulu adalah platform game online yang menghadirkan beragam permainan, informasi terbaru, panduan fitur, dan pengalaman akses yang praktis bagi pengguna.">
+
   <meta property="og:url" content="https://sultancirebon.github.io/">
+
   <meta property="og:image" content="https://sultancirebon.github.io/assets/mahjong5000.jpg">
+
   <meta property="og:site_name" content="SULTANLULU">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
+
   <meta name="twitter:title" content="SultanLulu Platform Game Online dengan Informasi Terbaru">
+
   <meta name="twitter:description" content="SultanLulu adalah platform game online yang menghadirkan beragam permainan, informasi terbaru, panduan fitur, dan pengalaman akses yang praktis bagi pengguna.">
+
   <meta name="twitter:image" content="https://sultancirebon.github.io/assets/mahjong5000.jpg">
 
   <!-- Schema -->
@@ -53,6 +63,7 @@
   </script>
 
   <style>
+
     * {
       margin: 0;
       padding: 0;
@@ -65,11 +76,21 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
+
       background:
-        radial-gradient(circle at top, #202020 0%, #101010 42%, #070707 100%);
+        radial-gradient(
+          circle at top,
+          #202020 0%,
+          #101010 42%,
+          #070707 100%
+        );
+
       color: #f5f5f5;
+
       line-height: 1.7;
+
       min-height: 100vh;
+
       padding-bottom: 105px;
     }
 
@@ -84,9 +105,12 @@
 
     .page {
       width: min(100% - 30px, 820px);
+
       margin: 0 auto;
+
       padding: 42px 0 50px;
     }
+
 
     /* =========================
        HEADER / LOGO
@@ -94,29 +118,41 @@
 
     .header {
       text-align: center;
+
       margin-bottom: 25px;
     }
 
     .logo-wrap {
       display: flex;
+
       justify-content: center;
+
       align-items: center;
+
       margin-bottom: 22px;
     }
 
     .logo {
       width: auto;
+
       max-width: 270px;
+
       max-height: 110px;
+
       object-fit: contain;
     }
 
     .main-title {
       font-size: clamp(28px, 6vw, 46px);
+
       line-height: 1.15;
+
       font-weight: 800;
+
       letter-spacing: -1px;
+
       color: #ffffff;
+
       margin-bottom: 14px;
     }
 
@@ -126,41 +162,59 @@
 
     .description {
       max-width: 680px;
+
       margin: 0 auto;
+
       color: #bdbdbd;
+
       font-size: 15px;
+
       line-height: 1.75;
     }
 
+
     /* =========================
-       IMAGE
+       IMAGE / UKURAN BEBAS
     ========================== */
 
     .hero-image-wrap {
       position: relative;
+
       margin-top: 30px;
+
       border-radius: 18px;
+
       overflow: hidden;
+
       padding: 1px;
+
       background: linear-gradient(
         135deg,
         rgba(246,196,83,.75),
         rgba(255,255,255,.08),
         rgba(246,196,83,.25)
       );
+
       box-shadow: 0 20px 60px rgba(0,0,0,.35);
     }
 
+    /*
+      Foto sekarang mengikuti rasio asli file.
+      Bisa portrait, landscape, 1:1, 4:5, 16:9, dll.
+    */
+
     .hero-image {
       width: 100%;
-      aspect-ratio: 1 / 1;
-      object-fit: cover;
+
+      height: auto;
+
+      object-fit: contain;
+
       border-radius: 17px;
+
       background: #181818;
     }
 
-    /* Jika ingin foto bebas ukurannya,
-       hapus "aspect-ratio: 1 / 1;" di atas */
 
     /* =========================
        ARTICLE
@@ -168,17 +222,25 @@
 
     .article {
       margin-top: 32px;
+
       padding: 30px;
+
       background: rgba(255,255,255,.035);
+
       border: 1px solid rgba(255,255,255,.08);
+
       border-radius: 18px;
+
       box-shadow: 0 18px 50px rgba(0,0,0,.18);
     }
 
     .article h2 {
       font-size: 25px;
+
       line-height: 1.35;
+
       margin-bottom: 17px;
+
       color: #ffffff;
     }
 
@@ -188,8 +250,11 @@
 
     .article p {
       font-size: 15px;
+
       color: #c8c8c8;
+
       margin-bottom: 16px;
+
       text-align: left;
     }
 
@@ -197,16 +262,21 @@
       margin-bottom: 0;
     }
 
+
     /* =========================
        FOOTER
     ========================== */
 
     footer {
       margin-top: 30px;
+
       text-align: center;
+
       font-size: 13px;
+
       color: #777;
     }
+
 
     /* =========================
        FLOATING BUTTON
@@ -214,13 +284,19 @@
 
     .floating-buttons {
       position: fixed;
+
       bottom: 0;
+
       left: 0;
+
       width: 100%;
+
       z-index: 9999;
 
       display: flex;
+
       justify-content: center;
+
       gap: 10px;
 
       padding:
@@ -239,8 +315,11 @@
 
     .floating-btn {
       position: relative;
+
       overflow: hidden;
+
       flex: 1;
+
       max-width: 395px;
 
       padding: 14px 16px;
@@ -248,8 +327,11 @@
       border-radius: 12px;
 
       font-size: 14px;
+
       font-weight: 800;
+
       text-align: center;
+
       letter-spacing: .3px;
 
       transition:
@@ -258,30 +340,51 @@
     }
 
     .btn-primary {
-      background: linear-gradient(135deg, #f6c453, #d89b21);
+      background: linear-gradient(
+        135deg,
+        #f6c453,
+        #d89b21
+      );
+
       color: #111111;
-      box-shadow: 0 7px 25px rgba(246,196,83,.18);
+
+      box-shadow:
+        0 7px 25px rgba(246,196,83,.18);
     }
 
     .btn-secondary {
-      background: linear-gradient(135deg, #222222, #101010);
+      background: linear-gradient(
+        135deg,
+        #222222,
+        #101010
+      );
+
       color: #f6c453;
+
       border: 1px solid rgba(246,196,83,.55);
-      box-shadow: 0 7px 25px rgba(0,0,0,.30);
+
+      box-shadow:
+        0 7px 25px rgba(0,0,0,.30);
     }
 
     .floating-btn:hover {
       transform: translateY(-2px);
     }
 
+
     /* Kilatan Cahaya */
+
     .floating-btn::before {
       content: "";
+
       position: absolute;
+
       top: -80%;
+
       left: -70%;
 
       width: 40%;
+
       height: 260%;
 
       background: linear-gradient(
@@ -292,10 +395,12 @@
       );
 
       transform: rotate(25deg);
+
       animation: shine 2.8s infinite;
     }
 
     @keyframes shine {
+
       0% {
         left: -80%;
       }
@@ -307,7 +412,9 @@
       100% {
         left: 140%;
       }
+
     }
+
 
     /* =========================
        MOBILE
@@ -321,11 +428,13 @@
 
       .page {
         width: calc(100% - 24px);
+
         padding-top: 30px;
       }
 
       .logo {
         max-width: 230px;
+
         max-height: 95px;
       }
 
@@ -339,15 +448,23 @@
 
       .hero-image-wrap {
         margin-top: 25px;
+
         border-radius: 15px;
       }
 
       .hero-image {
+        width: 100%;
+
+        height: auto;
+
+        object-fit: contain;
+
         border-radius: 14px;
       }
 
       .article {
         padding: 22px 19px;
+
         border-radius: 15px;
       }
 
@@ -357,41 +474,57 @@
 
       .article p {
         font-size: 14px;
+
         line-height: 1.8;
       }
 
       .floating-buttons {
         gap: 8px;
-        padding: 10px 10px calc(10px + env(safe-area-inset-bottom));
+
+        padding:
+          10px
+          10px
+          calc(10px + env(safe-area-inset-bottom));
       }
 
       .floating-btn {
         padding: 13px 8px;
+
         font-size: 12.5px;
+
         border-radius: 10px;
       }
+
     }
 
+
     /* Kurangi animasi untuk user yang memilih reduced motion */
+
     @media (prefers-reduced-motion: reduce) {
+
       .floating-btn::before {
         animation: none;
       }
+
     }
 
   </style>
 </head>
 
+
 <body>
 
   <main class="page">
 
+
     <!-- =====================
          LOGO
     ====================== -->
+
     <header class="header">
 
       <div class="logo-wrap">
+
         <img
           src="https://sultancirebon.github.io/assets/sultan.gif"
           alt="SultanLulu"
@@ -399,35 +532,42 @@
           width="270"
           height="100"
         >
+
       </div>
 
-<!-- TITLE -->
-<h1 class="main-title">
-  Mengenal <span>SULTANLULU</span> Sebagai Platform Game Online
-</h1>
 
-<!-- DESKRIPSI -->
-<p class="description">
-  SULTANLULU hadir sebagai platform game online yang menghadirkan
-  beragam pilihan permainan, informasi terbaru, serta panduan
-  dalam tampilan yang sederhana, responsif, dan mudah diakses
-  melalui berbagai perangkat.
-</p>
+      <!-- TITLE -->
+
+      <h1 class="main-title">
+        Mengenal <span>SULTANLULU</span> Sebagai Platform Game Online
+      </h1>
+
+
+      <!-- DESKRIPSI -->
+
+      <p class="description">
+
+        SULTANLULU hadir sebagai platform game online yang menghadirkan
+        beragam pilihan permainan, informasi terbaru, serta panduan
+        dalam tampilan yang sederhana, responsif, dan mudah diakses
+        melalui berbagai perangkat.
+
+      </p>
 
     </header>
 
 
     <!-- =====================
          FOTO / BANNER
+         UKURAN BEBAS
     ====================== -->
+
     <figure class="hero-image-wrap">
 
       <img
         src="https://sultancirebon.github.io/assets/mahjong5000.jpg"
         alt="Informasi terbaru SULTANLULU"
         class="hero-image"
-        width="800"
-        height="800"
         loading="eager"
         fetchpriority="high"
       >
@@ -439,63 +579,92 @@
          ARTIKEL 200+ KATA
     ====================== -->
 
-<article class="content-article">
-  <h2>SultanLulu: Platform Game Online dengan Beragam Pilihan Permainan</h2>
+    <article class="content-article">
 
-  <p>
-    <strong>SultanLulu</strong> merupakan platform game online yang menghadirkan
-    beragam pilihan permainan dalam tampilan yang sederhana dan mudah digunakan.
-    Kehadiran SultanLulu ditujukan untuk memberikan akses yang praktis sekaligus
-    menyediakan informasi yang membantu pengguna mengenal berbagai permainan,
-    fitur, dan pembaruan yang tersedia.
-  </p>
+      <h2>
+        SultanLulu: Platform Game Online dengan Beragam Pilihan Permainan
+      </h2>
 
-  <p>
-    Sebagai platform yang mengikuti perkembangan dunia <strong>game online</strong>,
-    SultanLulu menyajikan berbagai kategori permainan dengan informasi yang
-    terstruktur. Pengguna dapat menemukan penjelasan mengenai permainan populer,
-    fitur permainan, panduan dasar, hingga informasi terbaru yang diperbarui
-    secara berkala.
-  </p>
+      <p>
 
-  <h2>Informasi Game Online yang Mudah Dipahami</h2>
+        <strong>SultanLulu</strong> merupakan platform game online yang
+        menghadirkan beragam pilihan permainan dalam tampilan yang sederhana
+        dan mudah digunakan. Kehadiran SultanLulu ditujukan untuk memberikan
+        akses yang praktis sekaligus menyediakan informasi yang membantu
+        pengguna mengenal berbagai permainan, fitur, dan pembaruan yang tersedia.
 
-  <p>
-    SultanLulu tidak hanya berfokus pada pilihan permainan, tetapi juga pada
-    penyajian informasi yang jelas dan mudah dipahami. Struktur halaman dibuat
-    sederhana agar pengguna dapat menemukan informasi yang mereka cari tanpa
-    harus melalui navigasi yang rumit.
-  </p>
+      </p>
 
-  <p>
-    Dari sisi pengalaman pengguna, <strong>SultanLulu</strong> dirancang agar
-    dapat diakses melalui berbagai perangkat. Tampilan responsif membuat halaman
-    tetap nyaman digunakan melalui smartphone, tablet, laptop, maupun desktop.
-    Hal ini menjadi bagian penting dalam memberikan pengalaman akses yang
-    konsisten bagi setiap pengguna.
-  </p>
+      <p>
 
-  <h2>Mengenal SultanLulu Lebih Dekat</h2>
+        Sebagai platform yang mengikuti perkembangan dunia
+        <strong>game online</strong>, SultanLulu menyajikan berbagai kategori
+        permainan dengan informasi yang terstruktur. Pengguna dapat menemukan
+        penjelasan mengenai permainan populer, fitur permainan, panduan dasar,
+        hingga informasi terbaru yang diperbarui secara berkala.
 
-  <p>
-    Dengan pembaruan konten secara berkala, SultanLulu terus mengembangkan
-    informasi mengenai pilihan game, fitur, panduan, serta perkembangan terbaru
-    dalam dunia gaming online. Penyajian konten yang konsisten juga membantu
-    pengguna memahami identitas dan layanan yang tersedia di platform ini.
-  </p>
+      </p>
 
-  <p>
-    Melalui kombinasi antara pilihan permainan, informasi yang terstruktur,
-    serta akses yang praktis, <strong>SultanLulu</strong> terus membangun
-    identitasnya sebagai brand game online yang mudah dikenali. Pengguna dapat
-    mengikuti berbagai informasi terbaru di SultanLulu untuk mengetahui
-    perkembangan permainan dan fitur yang tersedia.
-  </p>
-</article>
+
+      <h2>
+        Informasi Game Online yang Mudah Dipahami
+      </h2>
+
+      <p>
+
+        SultanLulu tidak hanya berfokus pada pilihan permainan, tetapi juga pada
+        penyajian informasi yang jelas dan mudah dipahami. Struktur halaman
+        dibuat sederhana agar pengguna dapat menemukan informasi yang mereka
+        cari tanpa harus melalui navigasi yang rumit.
+
+      </p>
+
+      <p>
+
+        Dari sisi pengalaman pengguna, <strong>SultanLulu</strong> dirancang
+        agar dapat diakses melalui berbagai perangkat. Tampilan responsif membuat
+        halaman tetap nyaman digunakan melalui smartphone, tablet, laptop,
+        maupun desktop. Hal ini menjadi bagian penting dalam memberikan
+        pengalaman akses yang konsisten bagi setiap pengguna.
+
+      </p>
+
+
+      <h2>
+        Mengenal SultanLulu Lebih Dekat
+      </h2>
+
+      <p>
+
+        Dengan pembaruan konten secara berkala, SultanLulu terus mengembangkan
+        informasi mengenai pilihan game, fitur, panduan, serta perkembangan
+        terbaru dalam dunia gaming online. Penyajian konten yang konsisten juga
+        membantu pengguna memahami identitas dan layanan yang tersedia di
+        platform ini.
+
+      </p>
+
+      <p>
+
+        Melalui kombinasi antara pilihan permainan, informasi yang terstruktur,
+        serta akses yang praktis, <strong>SultanLulu</strong> terus membangun
+        identitasnya sebagai brand game online yang mudah dikenali. Pengguna
+        dapat mengikuti berbagai informasi terbaru di SultanLulu untuk
+        mengetahui perkembangan permainan dan fitur yang tersedia.
+
+      </p>
+
+    </article>
+
+
+    <!-- FOOTER -->
 
     <footer>
+
       © 2026 SULTANLULU. Semua Hak Dilindungi.
+
     </footer>
+
 
   </main>
 
@@ -505,7 +674,10 @@
        GANTI URL DI SINI
   ============================= -->
 
-  <nav class="floating-buttons" aria-label="Navigasi utama">
+  <nav
+    class="floating-buttons"
+    aria-label="Navigasi utama"
+  >
 
     <a
       href="https://goolink.id/sultanlulu-pwa"
@@ -514,6 +686,7 @@
     >
       LOGIN / DAFTAR
     </a>
+
 
     <a
       href="https://gatottech.io/install-apk-lulu-2"
@@ -524,6 +697,7 @@
     </a>
 
   </nav>
+
 
 </body>
 </html>
